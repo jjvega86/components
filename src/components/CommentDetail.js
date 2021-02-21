@@ -5,14 +5,14 @@ const CommentDetail = (props) => {
   return (
     <div className="comment">
       <a href="/" className="avatar">
-        <img alt="avatar" src={props.getRandomImage()} />
+        <img alt="avatar" src={props.getRandomImage} />
       </a>
       <div className="content">
         <a href="/" className="author">
           {props.author}
         </a>
         <div className="metadata">
-          <span className="date">{props.dateTime}</span>
+          <span className="date">{props.getCurrentTime}</span>
         </div>
         <div className="text">{props.commentText}</div>
       </div>
