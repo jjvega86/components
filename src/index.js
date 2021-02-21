@@ -15,28 +15,34 @@ const getCurrentTime = () => {
 };
 
 const getRandomText = () => {
-  let text = `${faker.lorem.text()}?random=${Math.round(Math.random * 1000)}`;
+  let text = `${faker.lorem.text()}`;
   return text;
 };
+
+const getRandomName = () => {
+    let name = `${faker.name.firstName()}`;
+    return name;
+
+}
 
 const App = () => {
   return (
     <div className="ui container comments">
       <CommentDetail
         getRandomImage={getRandomImage()}
-        author="Thomas"
+        author={getRandomName()}
         getCurrentTime={getCurrentTime()}
         commentText={getRandomText()}
       />
       <CommentDetail
         getRandomImage={getRandomImage()}
-        author="Susan"
+        author={getRandomName()}
         getCurrentTime={getCurrentTime()}
         commentText={getRandomText()}
       />
       <CommentDetail
         getRandomImage={getRandomImage()}
-        author="Taylor"
+        author={getRandomName()}
         getCurrentTime={getCurrentTime()}
         commentText={getRandomText()}
       />
