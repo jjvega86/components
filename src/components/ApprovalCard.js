@@ -1,9 +1,19 @@
-import React from 'react';
+import React from "react";
 
 const ApprovalCard = (props) => {
-    return (  
-        <div></div>
-    );
-}
- 
+  return (
+    <div className="ui card">
+      <div className="content">
+        {/*Where our CommentDetail content will go*/}
+      </div>
+      <div className="extra content">
+        <div className="ui two buttons">
+          <div className="ui basic green button">Approve</div>
+          <div className="ui basic red button">Reject</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default ApprovalCard;
